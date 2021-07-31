@@ -1,0 +1,9 @@
+{% set sectionTitle = "Overview:" %}
+{% set bgColorClass = "bg-color-black" %}
+{% extends "./pageSection.njk" %}
+{% block sectionContent%}
+    <div class="display-flex flex-wrap justify-content-center">
+        {% include "../components/zineOverviewColoredBox.njk" %}
+        <img alt="" src="../../images/backgroundgradient_blob01.svg" class="max-height-12em padding-1em"/>
+    </div>
+{% endblock %}

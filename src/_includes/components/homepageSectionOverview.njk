@@ -1,0 +1,12 @@
+{% set sectionTitle = "Overview:" %}
+{% extends "./pageSection.njk" %}
+
+{% block sectionContent %}
+    <div class="align-items-stretch display-flex flex-wrap justify-content-center padding-top-1em ">
+        {% include "../components/homepageColoredBoxLeft.njk" %}
+        <div class="display-flex align-items-flex-end padding-top-1em width-xs-4 width-sm-4 width-md-6 width-lg-3 width-xl-3">
+            <img alt="" src="./images/crystals.svg" class="width-100pc"/>
+        </div>
+        {% include "./homepageColoredBoxRight.njk" %}
+    </div>
+{% endblock %}

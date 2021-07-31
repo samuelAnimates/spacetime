@@ -1,0 +1,12 @@
+<div class="align-items-center {{ bgcolorclass }} border-left-black-8px display-flex flex-direction-row flex-wrap justify-content-center margin-auto padding-1em width-xs-8 width-sm-9 width md-10 width-lg-10 width-xl-10 transform-skewx-neg5deg">
+    <img alt="{{ alttext }}" class="padding-left-1em padding-right-2em transform-skewx-5deg width-xs-6 width-sm-4 width-md-3 width-lg-3 width-xl-3" src="{{  imagesrc }}">
+    <div class="width-xs-12 width-sm-8 width-md-8 width-lg-8 width-xl-8">
+        <div class="padding-1em width-100pc">
+            <div class="transform-skewx-5deg padding-p5em">
+                <h3 class="text-center">{{ title }}</h3>
+                {% block content %}{% endblock %}
+                <div class="text-center">{% block linkurl %}{% endblock %}</div>
+            </div>
+        </div>
+    </div>   
+</div>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta name="Description" content="here" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@400;700&family=Righteous&display=swap');
+    </style>
+    <style>
+        html,body,div,span,applet,object,iframe,blockquote,pre,ol,ul,li,form,label,legend,caption,article,aside,details,embed,figure,figcaption,footer,header,menu,nav,section,mark,audio,video{box-sizing:border-box;margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+        article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+        body {
+            font-family: 'Bellota Text', monospace;
+            font-weight: 500;
+            font-size: 16pt;
+            line-height: 1.5;
+            color: inherit;
+        }
+        a{
+            background-color: rgba(255, 255, 253);
+            border:0;
+            color: rgb(0, 0, 145);
+            font-family: inherit;
+            font-size: inherit;
+            margin:0;
+            padding:.03em;
+            text-decoration-line: underline;
+            vertical-align:baseline;  
+        }
+        a:focus, a:active, a:hover{
+            background-color: rgb(0,0,145);
+            color: rgb(255,255,251);
+        }
+        h1{
+            font-family: 'Righteous', sans-serif;
+            font-size: 3em;
+            font-weight: 800;
+            margin:0;
+            padding:0;
+            border:0;
+            vertical-align:baseline;
+        }
+        h2{
+            font-family: 'Righteous', sans-serif;
+            font-size: 2em;
+            font-weight: 700;
+            margin:0;
+            padding:0;
+            border:0;
+            vertical-align:baseline;
+        }
+        h3{
+            font-family: 'Righteous', sans-serif;
+            font-size: 1.5em;
+            font-weight: 400;
+            margin:0;
+            padding:0;
+            border:0;
+            vertical-align:baseline;
+            text-decoration-line: underline;
+        }
+        p{
+            font-family: inherit;
+            font-size: 1em;
+            margin:0;
+            padding:.25em;
+            border:0;
+            vertical-align:baseline;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        ::selection {
+            color: rgb(255, 255, 251);
+            background:rgb(97, 0, 0);
+        }
+        a.skip-main {
+            left:-999px;
+            position:absolute;
+            top:auto;
+            width:1px;
+            height:1px;
+            overflow:hidden;
+        }
+        a.skip-main:focus, a.skip-main:active {
+            left: 0;
+            top: 0;
+            width: 10em;
+            height: 3em;
+            overflow:auto;
+            margin: 1em;
+            padding:5px;
+            border:8px double rgb(255, 236, 190);
+            font-size:1.2em;
+            z-index:999;
+        }
+        .align-items-center{
+            align-items: center;
+        }
+        .bg-color-main{
+            background-color: rgb(0,0,46);
+        }
+        .color-white{
+            color: rgb(255,255,255);
+        }
+        .display-flex{
+            display: flex;
+        }
+        .flex-wrap{
+            flex-wrap: wrap;
+        }
+        .font-size-0p8em{
+            font-size: 0.8em;
+        }
+        .height-200px{
+            height: 200px;
+        }
+        .justify-content-center{
+            justify-content: center;
+        }
+        .margin-auto{
+            margin: auto;
+        }
+        .max-width-100pc{
+            max-width: 100%;
+        }
+        .padding-top-2p5em{
+            padding-top: 2.5em;
+        }
+        .padding-p5em{
+            padding: 0.5em;
+        }
+        .padding-1em{
+            padding: 1em;
+        }
+        .padding-top-5em{
+            padding-top: 5em;
+        }
+        .justify-content-center{
+            justify-content: center;
+        }
+        .text-align-center{
+            text-align: center;
+        }
+        .text-align-left{
+            text-align: left;
+        }
+        .text-align-right{
+            text-align: right;
+        }
+        .width-100pc{
+            width: 100%;
+        }
+
+        @media (max-width: 576px) {
+            .width-xs-2{
+                width:16.66%
+            }
+            .width-xs-3{
+                width:25%;
+            }
+            .width-xs-4{
+                width:33.33%;
+            }
+            .width-xs-6{
+                width:49.9%;
+            }
+            .width-xs-8{
+                width:66.66%;
+            }
+            .width-xs-9{
+                width:74%;
+            }
+            .width-xs-10{
+                width:83.33%;
+            }
+            .width-xs-12{
+                width:100%;
+            }
+        }
+
+        @media (min-width: 576px) {
+            .width-sm-2{
+                width:16.66%
+            }
+            .width-sm-3{
+                width:25%;
+            }
+            .width-sm-4{
+                width:33.33%;
+            }
+            .width-sm-6{
+                width:49.9%;
+            }
+            .width-sm-8{
+                width:66.66%;
+            }
+            .width-sm-9{
+                width:74%;
+            }
+            .width-sm-10{
+                width:83.33%;
+            }
+            .width-sm-12{
+                width:100%;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .width-md-2{
+                width:16.66%
+            }
+            .width-md-3{
+                width:25%;
+            }
+            .width-md-4{
+                width:33.33%;
+            }
+            .width-md-6{
+                width:49.9%;
+            }
+            .width-md-8{
+                width:66.66%;
+            }
+            .width-md-9{
+                width:74%;
+            }
+            .width-md-10{
+                width:83.33%;
+            }
+            .width-md-12{
+                width:100%;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .width-lg-1{
+                width:8.33%
+            }
+            .width-lg-2{
+                width:16.66%
+            }
+            .width-lg-3{
+                width:25%;
+            }
+            .width-lg-4{
+                width:33.33%;
+            }
+            .width-lg-6{
+                width:49.9%;
+            }
+            .width-lg-8{
+                width:66.66%;
+            }
+            .width-lg-9{
+                width:74%;
+            }
+            .width-lg-10{
+                width:83.33%;
+            }
+            .width-lg-12{
+                width:100%;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .width-xl-1{
+                width:8.33%
+            }
+            .width-xl-2{
+                width:16.66%
+            }
+            .width-xl-3{
+                width:25%;
+            }
+            .width-xl-4{
+                width:33.33%;
+            }
+            .width-xl-6{
+                width:49.9%;
+            }
+            .width-xl-8{
+                width:66.66%;
+            }
+            .width-xl-9{
+                width:74%;
+            }
+            .width-xl-10{
+                width:83.33%;
+            }
+            .width-xl-12{
+                width:100%;
+            }
+        }
+    </style>
+  </head>
+  <body class="bg-color-main color-white">
+    <header class="bg-radial-gradient content border-bottom-black-4px text-center">
+        <a class="skip-main" href="#maincontent">Skip to main content.</a>
+        <div class="align-items-center display-flex flex-wrap justify-content-center">
+            <img alt="" class="height-200px"  src="/images/spiral.gif" />
+            <h1 class="padding-p5em text-align-center">
+              Space-Time Paradox:</br><span class="font-size-0p8em">Home.</span>
+            </h1>
+        </div>
+    </header>
+    <main id="maincontent"><div class="margin-auto padding-top-5em">
+    <p class="text-align-center">
+        There exist parallel realities,</br>
+        And parallel worlds,</br>
+        At home within our own.</br>
+        A paradox that threatens space, time,</br>
+        And life as we know it.
+    </p>
+    <p class="padding-top-2p5em text-align-center">
+        You can dissect it, measure it,</br>
+        write about it, and discuss it.</br>
+        You might even try to deny it,</br>
+        Or ingore it.
+    </p>
+</div>
+<div class="align-items-center display-flex flex-wrap justify-content-center padding-top-5em width-100pc">
+    <img class="max-width-100pc width-xs-12 width-sm-6 width-md-6 width-lg-6 width-xl-4" src="../images/eclipse.png"/>
+    <p class="padding-1-em text-align-left width-xs-10 width-sm-8 width-md-4 width-lg-4 width-xl-4">
+        But, no, you will never make sense of it.</br>
+        Because it shouldn't exist.
+    </p>
+</div>
+<div class="align-items-center display-flex flex-wrap justify-content-center padding-top-5em width-100pc">
+    <p class="padding-1-em text-align-right width-xs-10 width-sm-4 width-md-4 width-lg-4 width-xl-6">
+        And, no, you can't just ignore it.</br>
+        Because such deeply conflicting realities won't hold together for long.
+    </p>
+    <img class="max-width-100pc width-xs-12 width-sm-6 width-md-6 width-lg-6 width-xl-4" src="../images/earthrise.png"/>
+</div>
+<div>
+    <h2 class="text-align-center">So... what is there to do?</h2>
+</div>
+</main>
+    <footer style="background-color: rgb(19,47,108); color: rgb(255,255,255); font-size: .75em; margin-top: 1.5em; padding:1em; text-align:center;">
+      <p class="padding-bottom-1em">
+          Author: <a href="https://www.samuelanimates.com/">Samuel R. Mendez</a>. Latest edits: July 17, 2021.
+      </p>
+      <p class="padding-bottom-1em">
+          I made this site using <a href="https://www.11ty.dev/">Eleventy</a>. This is a project as part of my <a src="https://hercommunication.org/">HER Communication</a> series of public health communications.
+      </p>
+      <p>
+          By default, all material on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br/> There wil be notes on the page if this isn't true for certain content.
+      </p>
+    </footer>
+    <script src="/assets/script.js"></script>
+  </body>
+</html>

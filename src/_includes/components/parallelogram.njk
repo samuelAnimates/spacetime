@@ -1,0 +1,11 @@
+<div class="padding-5px-9px width-xs-12 width-sm-12 width-md-6 width-lg-4 width-xl-4">
+    <div class="{{ bgColorClass}} border-right-black-8px border-top-black-4px box-shadow-lower padding-1em transform-skewx-neg15deg transform-skewy-neg5deg width-100pc"}}>
+        <div class="padding-p5em transform-skewx-15deg transform-skewy-5deg">
+            <h3 class="padding-bottom-1em text-center">{{blurbTitle}}</h3>
+            <div>
+                <img alt="" class="display-block height-6em object-fit-cover max-width-100pc margin-auto width-xs-6 width-sm-6 width-md-6 width-lg-6 width-xl-6" src={{imgPath}} />
+                {% block description %}{% endblock %}
+            </div>
+        </div>
+    </div>
+</div>

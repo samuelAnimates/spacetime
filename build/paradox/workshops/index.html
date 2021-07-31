@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Workshops</title>
+    <meta name="Description" content="here" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@400;700&family=Righteous&display=swap');
+    </style>
+    <style>
+        html,body,div,span,applet,object,iframe,blockquote,pre,ol,ul,li,form,label,legend,caption,article,aside,details,embed,figure,figcaption,footer,header,menu,nav,section,mark,audio,video{box-sizing:border-box;margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+        article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+        body {
+            font-family: 'Bellota Text', monospace;
+            font-weight: 500;
+            font-size: 16pt;
+            line-height: 1.5;
+            color: inherit;
+        }
+        a{
+            background-color: rgba(255, 255, 253);
+            border:0;
+            color: rgb(0, 0, 145);
+            font-family: inherit;
+            font-size: inherit;
+            margin:0;
+            padding:.03em;
+            text-decoration-line: underline;
+            vertical-align:baseline;  
+        }
+        a:focus, a:active, a:hover{
+            background-color: rgb(0,0,145);
+            color: rgb(255,255,251);
+        }
+        h1{
+            font-family: 'Righteous', sans-serif;
+            font-size: 2em;
+            font-weight: 800;
+            margin:0;
+            padding:0;
+            border:0;
+            vertical-align:baseline;
+        }
+        h2{
+            font-family: 'Righteous', sans-serif;
+            font-size: 1.75em;
+            font-weight: 700;
+            margin:0;
+            padding:0;
+            border:0;
+            vertical-align:baseline;
+        }
+        h3{
+            font-family: 'Righteous', sans-serif;
+            font-size: 1.25em;
+            font-weight: 400;
+            margin:0;
+            padding:0;
+            border:0;
+            vertical-align:baseline;
+            text-decoration-line: underline;
+        }
+        p{
+            font-family: inherit;
+            font-size: 1em;
+            margin:0;
+            padding:.25em;
+            border:0;
+            vertical-align:baseline;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        ::selection {
+            color: rgb(255, 255, 251);
+            background:rgb(97, 0, 0);
+        }
+        a.skip-main {
+            left:-999px;
+            position:absolute;
+            top:auto;
+            width:1px;
+            height:1px;
+            overflow:hidden;
+        }
+        a.skip-main:focus, a.skip-main:active {
+            left: 0;
+            top: 0;
+            width: 10em;
+            height: 3em;
+            overflow:auto;
+            margin: 1em;
+            padding:5px;
+            border:8px double rgb(255, 236, 190);
+            font-size:1.2em;
+            z-index:999;
+        }
+        .align-items-center{
+            align-items: center;
+        }
+        .align-items-flex-end{
+            align-items: flex-end;
+        }
+        .align-items-flex-start{
+            align-items: flex-start;
+        }
+        .align-items-stretch{
+            align-items: stretch;
+        }
+        .arrow-left{
+            width: 0; 
+            height: 0; 
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-right: 15px solid rgb(0,0,0);
+        }
+        .arrow-right{
+            width: 0; 
+            height: 0; 
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 15px solid rgb(0,0,0);
+        }
+        .bg-color-black{
+            background-color: rgb(2, 3, 0);
+        }
+        .bg-color-blue{
+            background-color: rgb(173, 190, 255);
+        }
+        .bg-blue-gradient-right{
+            background: linear-gradient(270deg, rgba(173,190,255,1) 3%, rgba(255, 253, 254,1) 33%, rgba(255,255,255,1) 67%);
+        }
+        .bg-color-pink{
+            background-color: rgb(255, 166, 206);
+        }
+        .bg-color-darkpurple{
+            background-color: rgb(97,0,68);
+        }
+        .bg-color-white{
+            background-color: rgb(255, 255, 251);
+        }
+        .bg-color-yellow{
+            background-color: rgb(255, 236, 190);
+        }
+        .bg-image-gradient{
+            background-image: url("./images/gradientbackground.svg");
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .bg-pink-gradient-right{
+            background: linear-gradient(270deg, rgba(255,166,206,1) 3%, rgba(255, 253, 254,1) 33%, rgba(255,255,255,1) 67%);
+        }
+        .bg-radial-gradient{
+            background: rgb(255,255,255);
+            background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,.25) 33%, rgba(173,190,255,.25) 52%, rgba(173,190,255,.25) 62%, rgba(255,236,190,.25) 72%, rgba(255,236,190,.25) 85%, rgba(255,166,206,.25) 93%, rgba(255,166,206,.25) 100%);
+        }
+        .bg-yellow-gradient{
+            background: linear-gradient(0deg, rgba(255,236,190,1) 10%, rgba(255,255,253,1) 25%);
+        }
+        .bg-yellow-gradient-right{
+            background: linear-gradient(270deg, rgba(255,236,190,1) 3%, rgba(255,255,253,1) 33%, rgba(255,255,255,1) 67%);
+        }
+        .border-bottom-black-4px{
+            border-bottom: 4px solid rgb(2, 3, 0);
+        }
+        .border-left-black-8px{
+            border-left: 8px solid rgb(2, 3, 0);
+        }
+        .border-right-black-2px{
+            border-right: 2px solid rgb(2, 3, 0);
+        }
+        .border-right-black-8px{
+            border-right: 8px solid rgb(2, 3, 0);
+        }
+        .border-top-black-2px{
+            border-top: 2px solid rgb(2, 3, 0);
+        }
+        .border-bottom-white-4px{
+            border-bottom: 4px solid rgb(255,255,251);
+        }
+        .bottom-0{
+            bottom: 0;
+        }
+        .box-shadow-lower{
+            box-shadow: -8px 4px 0px 0px rgb(3,2,0);
+        }
+        .box-shadow-upper{
+            box-shadow: 8px -4px 0px 0px rgb(3,2,0);
+        }
+        .color-black{
+            color: rgb(2, 3, 0);
+        }
+        .color-blue{
+            color: #ADBEFF;
+        }
+        .color-pink{
+            color: #FFA6CE;
+        }
+        .color-white{
+            color: rgb(255, 255, 251);
+        }
+        .color-yellow{
+            color: rgb(255, 236, 190);
+        }
+        .display-flex{
+            display: flex;
+        }
+        .display-block{
+            display: block;
+        }
+        .display-inline-block{
+            display: inline-block;
+        }
+        .flex-direction-column{
+            flex-direction: column;
+        }
+        .flex-direction-row{
+            flex-direction: row;
+        }
+        .flex-wrap{
+            flex-wrap: wrap;
+        }
+        .flex-wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+        .float-left{
+            float: left;
+        }
+        .float-right{
+            float: right;
+        }
+        .font-size-p9em{
+            font-size: .9em;
+        }
+        .font-weight-700{
+            font-weight: 700;
+        }
+        .height-auto{
+            height: auto;
+        }
+        .height-6em{
+            max-height: 6em;
+        }
+        .justify-content-center{
+            justify-content: center;
+        }
+        .justify-content-space-between{
+            justify-content: space-between;
+        }
+        .justify-content-flex-end{
+            justify-content: flex-end;
+        }
+        .margin-auto{
+            margin: auto;
+        }
+        .max-height-6em{
+            max-height: 6em;
+        }
+        .max-height-12em{
+            max-height: 12em;
+        }
+        .max-width-100pc{
+            max-width: 100%;
+        }
+        .object-fit-contain{
+        object-fit: contain;
+        }
+        .object-fit-cover{
+            object-fit: cover;
+        }
+        .padding-5px-9px{
+            padding: 20px 10px;
+        }
+        .padding-p15em{
+            padding: .15em;
+        }
+        .padding-p5em{
+            padding: 0.5em;
+        }
+        .padding-1em{
+            padding: 1em;
+        }
+        .padding-bottom-1em{
+            padding-bottom: 1em;
+        }
+        .padding-bottom-2em{
+            padding-bottom: 2em;
+        }
+        .padding-left-1em{
+            padding-left: 1em;
+        }
+        .padding-right-2em{
+            padding-right: 2em;
+        }
+        .padding-top-1em{
+            padding-top: 1em;
+        }
+
+        .right-1em{
+            right: 1em;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .text-left{
+            text-align: left;
+        }
+        .transform-skewx-neg15deg{
+            transform: skewX(-15deg);
+        }
+        .transform-skewx-neg5deg{
+            transform: skewX(-5deg);
+        }
+        .transform-skewx-5deg{
+            transform: skewX(5deg);
+        }
+        .transform-skewx-15deg{
+            transform: skewX(15deg);
+        }
+        .transform-skewy-neg5deg{
+            transform: skewY(-5deg);
+        }
+        .transform-skewy-5deg{
+            transform: skewY(5deg);
+        }
+        .width-7em{
+            width: 7em;
+        }
+        .width-10em{
+            width: 10em;
+        }
+        .width-100pc{
+            width: 100%;
+        }
+
+        @media (max-width: 576px) {
+            .width-xs-2{
+                width:16.66%
+            }
+            .width-xs-3{
+                width:25%;
+            }
+            .width-xs-4{
+                width:33.33%;
+            }
+            .width-xs-6{
+                width:50%;
+            }
+            .width-xs-8{
+                width:66.66%;
+            }
+            .width-xs-9{
+                width:74%;
+            }
+            .width-xs-10{
+                width:83.33%;
+            }
+            .width-xs-12{
+                width:100%;
+            }
+        }
+
+        @media (min-width: 576px) {
+            .width-sm-2{
+                width:16.66%
+            }
+            .width-sm-3{
+                width:25%;
+            }
+            .width-sm-4{
+                width:33.33%;
+            }
+            .width-sm-6{
+                width:50%;
+            }
+            .width-sm-8{
+                width:66.66%;
+            }
+            .width-sm-9{
+                width:74%;
+            }
+            .width-sm-10{
+                width:83.33%;
+            }
+            .width-sm-12{
+                width:100%;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .width-md-2{
+                width:16.66%
+            }
+            .width-md-3{
+                width:25%;
+            }
+            .width-md-4{
+                width:33.33%;
+            }
+            .width-md-6{
+                width:50%;
+            }
+            .width-md-8{
+                width:66.66%;
+            }
+            .width-md-9{
+                width:74%;
+            }
+            .width-md-10{
+                width:83.33%;
+            }
+            .width-md-12{
+                width:100%;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .width-lg-1{
+                width:8.33%
+            }
+            .width-lg-2{
+                width:16.66%
+            }
+            .width-lg-3{
+                width:25%;
+            }
+            .width-lg-4{
+                width:33.33%;
+            }
+            .width-lg-6{
+                width:50%;
+            }
+            .width-lg-8{
+                width:66.66%;
+            }
+            .width-lg-9{
+                width:74%;
+            }
+            .width-lg-10{
+                width:83.33%;
+            }
+            .width-lg-12{
+                width:100%;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .width-xl-1{
+                width:8.33%
+            }
+            .width-xl-2{
+                width:16.66%
+            }
+            .width-xl-3{
+                width:25%;
+            }
+            .width-xl-4{
+                width:33.33%;
+            }
+            .width-xl-6{
+                width:50%;
+            }
+            .width-xl-8{
+                width:66.66%;
+            }
+            .width-xl-9{
+                width:74%;
+            }
+            .width-xl-10{
+                width:83.33%;
+            }
+            .width-xl-12{
+                width:100%;
+            }
+        }
+    </style>
+  </head>
+  <body class="bg-color-white color-black">
+    <header class="bg-radial-gradient content border-bottom-black-4px text-center">
+        <a class="skip-main" href="#maincontent">Skip to main content.</a>
+        <div class="align-items-center display-flex flex-wrap justify-content-center">
+            <img class="width-10em" alt="HER: Health Equity Rituals" src=../../images/logo_healthEquityRituals.png />
+            <h1 class="padding-p5em">
+              Workshops
+            </h1>
+        </div>
+        <nav class="align-items-center bg-color-yellow display-flex border-bottom-black-4px border-top-black-2px flex-direction-row flex-wrap justify-content-center font-size-p9em width-100pc">
+            <div class="padding-p15em text-center">
+                Navigation Links:
+            </div>
+            <ul class="display-flex flex-wrap justify-content-center">
+                <li class="display-inline-block padding-p5em"><a href="/">Home</a></li>
+                <li class="display-inline-block padding-p5em"><a href="/pages/workshops">Workshops</a></li>
+                <li class="display-inline-block padding-p5em"><a href="/pages/zine">Zine</a></li>
+                <li class="display-inline-block padding-p5em"><a href="/pages/games">Tools & Games</a></li>
+                <li class="display-inline-block padding-p5em"><a href="/pages/arts">Arts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="maincontent"><section class="bg-pink-gradient-right display-flex justify-content-flex-end padding-bottom-2em padding-top-1em">
+    <div class="padding-right-2em width-xs-10 width-sm-10 width-md-8 width-lg-8 width-xl-6">
+        <div class="bg-color-yellow border-right-black-2px box-shadow-lower padding-p5em transform-skewx-5deg">
+            <div class="padding-1em transform-skewx-neg5deg">
+                <h2 class="text-center">What will it take to reach health equity? What will we do next?</h2>
+                
+<p>These workshops help participants explore health equity. They experiment with moods and formats. They focus on arts, media, and self-reflection.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="padding-bottom-2em padding-top-1em">
+    <div class="display-flex justify-content-center padding-1em text-center width-100pc">
+        <h2 class="bg-yellow-gradient border-bottom-black-4px width-xs-9 width-sm-8 width-md-6 width-lg-4 width-xl-3">Workshop Guides</h2>
+    </div>
+    <div class="align-items-stretch display-flex flex-wrap justify-content-center padding-top-1em ">
+        
+    <div class="align-items-center bg-color-yellow border-left-black-8px display-flex flex-direction-row flex-wrap justify-content-center margin-auto padding-1em width-xs-8 width-sm-9 width md-10 width-lg-10 width-xl-10 transform-skewx-neg5deg">
+    <img alt="workshop thumbnail" class="padding-left-1em padding-right-2em transform-skewx-5deg width-xs-6 width-sm-4 width-md-3 width-lg-3 width-xl-3" src="../../images/pmtldr.svg">
+    <div class="width-xs-12 width-sm-8 width-md-8 width-lg-8 width-xl-8">
+        <div class="padding-1em width-100pc">
+            <div class="transform-skewx-5deg padding-p5em">
+                <h3 class="text-center">Precision Medicine: TLDR</h3>
+                
+    <p>text</p>
+
+                <div class="text-center">
+    <a href="">Link</a>
+</div>
+            </div>
+        </div>
+    </div>   
+</div>
+    <div class="align-items-center bg-color-blue border-left-black-8px display-flex flex-direction-row flex-wrap justify-content-center margin-auto padding-1em width-xs-8 width-sm-9 width md-10 width-lg-10 width-xl-10 transform-skewx-neg5deg">
+    <img alt="workshop thumbnail" class="padding-left-1em padding-right-2em transform-skewx-5deg width-xs-6 width-sm-4 width-md-3 width-lg-3 width-xl-3" src="../../images/pmtldr.svg">
+    <div class="width-xs-12 width-sm-8 width-md-8 width-lg-8 width-xl-8">
+        <div class="padding-1em width-100pc">
+            <div class="transform-skewx-5deg padding-p5em">
+                <h3 class="text-center">We&#39;re all human here.</h3>
+                
+    <p>text</p>
+
+                <div class="text-center">
+    <a href="">Link</a>
+</div>
+            </div>
+        </div>
+    </div>   
+</div>
+
+    </div>
+</section></main>
+    <footer style="background-color: rgb(19,47,108); color: rgb(255,255,255); font-size: .75em; margin-top: 1.5em; padding:1em; text-align:center;">
+      <p class="padding-bottom-1em">
+          Author: <a href="https://www.samuelanimates.com/">Samuel R. Mendez</a>. Latest edits: July 17, 2021.
+      </p>
+      <p class="padding-bottom-1em">
+          I made this site using <a href="https://www.11ty.dev/">Eleventy</a>. All emojis come from <a href="https://openmoji.org/">OpenMoji</a>, the open-source emoji and icon project. <a href="https://creativecommons.org/licenses/by-sa/4.0/#">License: CC BY-SA 4.0</a>.
+      </p>
+      <p>
+          By default, all material on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br/>There wil be notes on the page if this isn't true for certain content.
+      </p>
+    </footer>
+    <script src="/assets/script.js"></script>
+  </body>
+</html>
